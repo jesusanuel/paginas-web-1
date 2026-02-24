@@ -7,8 +7,136 @@ hola mundo
 hola mundo3
     </h2>
   ---------------
-    <h1>TABLAS</h1>
-  <table>
-    tabla 1
-  </table>
-    </html>
+  <h1>TABLAS</h1>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla de Ejemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Tabla de Personas</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Ciudad</th>
+    </tr>
+    <tr><td>1</td><td>Ana</td><td>25</td><td>Madrid</td></tr>
+    <tr><td>2</td><td>Carlos</td><td>30</td><td>Barcelona</td></tr>
+    <tr><td>3</td><td>María</td><td>28</td><td>Valencia</td></tr>
+    <tr><td>4</td><td>Juan</td><td>35</td><td>Sevilla</td></tr>
+    <tr><td>5</td><td>Lucía</td><td>22</td><td>Bilbao</td></tr>
+    <tr><td>6</td><td>Pedro</td><td>40</td><td>Zaragoza</td></tr>
+    <tr><td>7</td><td>Sofía</td><td>27</td><td>Málaga</td></tr>
+    <tr><td>8</td><td>Diego</td><td>33</td><td>Granada</td></tr>
+    <tr><td>9</td><td>Elena</td><td>29</td><td>Alicante</td></tr>
+    <tr><td>10</td><td>Miguel</td><td>31</td><td>Toledo</td></tr>
+</table>
+
+</body>
+</html>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla Grande</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .tabla-contenedor {
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 1200px;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabla Grande de Datos</h2>
+
+<div class="tabla-contenedor">
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Departamento</th>
+            <th>Puesto</th>
+            <th>Salario</th>
+            <th>Estado</th>
+            <th>Fecha Ingreso</th>
+            <th>Turno</th>
+            <th>Supervisor</th>
+            <th>Proyecto</th>
+            <th>Nivel</th>
+            <th>Experiencia</th>
+            <th>Contrato</th>
+            <th>Horario</th>
+            <th>Oficina</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 20 Filas de Datos -->
+        <tr><td>1</td><td>Ana</td><td>López</td><td>25</td><td>Madrid</td><td>ana@mail.com</td><td>600111111</td><td>IT</td><td>Developer</td><td>2500€</td><td>Activo</td><td>2022-01-10</td><td>Mañana</td><td>García</td><td>WebApp</td><td>Junior</td><td>2 años</td><td>Indefinido</td><td>Completo</td><td>Central</td></tr>
+        <tr><td>2</td><td>Carlos</td><td>Pérez</td><td>30</td><td>Barcelona</td><td>carlos@mail.com</td><td>600222222</td><td>Ventas</td><td>Manager</td><td>3200€</td><td>Activo</td><td>2021-03-15</td><td>Tarde</td><td>Ruiz</td><td>CRM</td><td>Senior</td><td>5 años</td><td>Indefinido</td><td>Completo</td><td>Norte</td></tr>
+        <tr><td>3</td><td>María</td><td>Gómez</td><td>28</td><td>Valencia</td><td>maria@mail.com</td><td>600333333</td><td>Marketing</td><td>Analista</td><td>2800€</td><td>Activo</td><td>2020-07-20</td><td>Mañana</td><td>Torres</td><td>SEO</td><td>Intermedio</td><td>4 años</td><td>Indefinido</td><td>Completo</td><td>Sur</td></tr>
+        <tr><td>4</td><td>Juan</td><td>Martínez</td><td>35</td><td>Sevilla</td><td>juan@mail.com</td><td>600444444</td><td>IT</td><td>Admin</td><td>3000€</td><td>Activo</td><td>2019-11-05</td><td>Noche</td><td>García</td><td>Infra</td><td>Senior</td><td>8 años</td><td>Indefinido</td><td>Completo</td><td>Central</td></tr>
+        <tr><td>5</td><td>Lucía</td><td>Fernández</td><td>22</td><td>Bilbao</td><td>lucia@mail.com</td><td>600555555</td><td>RRHH</td><td>Asistente</td><td>2100€</td><td>Activo</td><td>2023-02-01</td><td>Mañana</td><td>Moreno</td><td>Onboarding</td><td>Junior</td><td>1 año</td><td>Temporal</td><td>Parcial</td><td>Este</td></tr>
+        <!-- Puedes duplicar y modificar estas filas hasta llegar a 20 o más -->
+    </tbody>
+</table>
+</div>
+
+</body>
+</html>
